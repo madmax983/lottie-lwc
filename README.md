@@ -1,18 +1,33 @@
-# Salesforce DX Project: Next Steps
+<a href="https://githubsfdeploy.herokuapp.com?owner=madmax983&repo=lottie-lwc&ref=main">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
+</a>
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+![gif of lottie-player](/assets/present.gif "Lottie Player Gif")
+## Table of Contents
 
-## How Do You Plan to Deploy Your Changes?
+-   [Description](#description)
+-   [Lottie-Player](#lottie-player)
+-   [Getting started with this template](#getting-started-with-this-template)
+-   [Starting with VS Code](#starting-with-vs-code)
+    -   [Authenticate with the Developer Hub](#authenticate-with-the-developer-hub)
+    -   [Working with a Scratch Org](#working-with-a-scratch-org)
+    -   [Working with a file](#working-with-a-file)
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Description
 
-## Configure Your Salesforce DX Project
+"Lottie is an open source animation file format that’s tiny, high quality, interactive, and can be manipulated at runtime." LottieFiles (https://lottiefiles.com) are a great way to add animation to your web and mobile apps. This component allows you to use LottieFiles in LWC, and exposes Target Configs so that it can be setup declaritively from App Builder, Experience Builder, or Flow Builder. Prior art for lottie files in a web component can be found here (https://github.com/LottieFiles/lottie-player), and this component is mostly a translations of that Web Component into LWC.
+## Lottie-Player
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+Lottie-Player exposes several public attributes
 
-## Read All About It
+- autoplay: Auto Plays the animation on load
+- background: Background color. Accepts any valid valiue that the CSS property does.
+- controls: Shows the playback controls for the animation.
+- hover: Plays the animation on hover.
+- loop: Determines whether to loop the animation.
+- mode: Normal or Bounce. Bounce will play the animation once, and then again in reverse.
+- renderer: Either SVG or Canvas
+- speed: Controls the speed of the animation.
+- Src: LottieFiles JSON data or URL to JSON. The JSON Data itself proves to be pretty difficult to import directly because of the LWC size constraints. It is best to import via URL. Either have the LottieFile JSON at a CDN (or LottieFiles.com) and add that URL as a CSP Trusted Site OR load the JSON into a static resource and add /resource/*/staticResourceName.
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)

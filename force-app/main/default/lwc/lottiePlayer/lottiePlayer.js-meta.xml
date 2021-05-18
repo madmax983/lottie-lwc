@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Lottie</masterLabel>
+    <description>Plays a lottie animation</description>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightning__FlowScreen</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage, lightning__AppPage, lightning__HomePage, lightning__FlowScreen, lightningCommunity__Default">
+            <property name="mode" type="String" label="Mode" description="Determines whether the animation plays in Normal or Bounce Mode" datasource="normal, bounce" default="normal"></property>
+            <property name="autoplay" type="Boolean" label="Autoplay" description="Controls whether the Animation will autoplay"></property>
+            <property name="background" type="String" label="Background" description="Background color of the animation. Accepts any valid value for the background CSS property" default="transparent"></property>
+            <property name="controls" type="Boolean" label="Controls" description="Sets whether the controls will be available or not"></property>
+            <property name="hover" type="Boolean" label="Hover" description="Sets whether the animation plays on hover"></property>
+            <property name="loop" type="Boolean" label="Loops" description="Sets whether the animation loops"></property>
+            <property name="renderer" type="String" label="Renderer" description="Determines the Rendered Output" datasource="svg,canvas" default="canvas"></property>
+            <property name="height" type="Integer" label="Height" description="Controls the height of the animation"></property>
+            <property name="width" type="Integer" label="Width" description="Controls the width of the animation"></property>
+            <property name="speed" type="Integer" label="Speed" description="Controls the speed of the animation" default="1"></property>
+            <property name="src" type="String" label="Src" description="Source of the Lottie File JSON"></property>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
