@@ -8,15 +8,11 @@
 
 -   [Description](#description)
 -   [Lottie-Player](#lottie-player)
--   [Getting started with this template](#getting-started-with-this-template)
--   [Starting with VS Code](#starting-with-vs-code)
-    -   [Authenticate with the Developer Hub](#authenticate-with-the-developer-hub)
-    -   [Working with a Scratch Org](#working-with-a-scratch-org)
-    -   [Working with a file](#working-with-a-file)
 
 ## Description
 
-"Lottie is an open source animation file format that’s tiny, high quality, interactive, and can be manipulated at runtime." LottieFiles (https://lottiefiles.com) are a great way to add animation to your web and mobile apps. This component allows you to use LottieFiles in LWC, and exposes Target Configs so that it can be setup declaritively from App Builder, Experience Builder, or Flow Builder. Prior art for lottie files in a web component can be found here (https://github.com/LottieFiles/lottie-player), and this component is mostly a translations of that Web Component into LWC.
+"Lottie is an open source animation file format that’s tiny, high quality, interactive, and can be manipulated at runtime." LottieFiles (https://lottiefiles.com) are a great way to add animation to your web and mobile apps. This component allows you to use LottieFiles in LWC, and exposes Target Configs so that it can be setup declaritively from App Builder, Experience Builder, or Flow Builder. Prior art for lottie files in a web component can be found here (https://github.com/LottieFiles/lottie-player), and this component is mostly a translation of that Web Component into LWC.
+
 ## Lottie-Player
 
 Lottie-Player exposes several public attributes
