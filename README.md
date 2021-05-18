@@ -25,5 +25,5 @@ Lottie-Player exposes several public attributes
 - mode: Normal or Bounce. Bounce will play the animation once, and then again in reverse.
 - renderer: Either SVG or Canvas
 - speed: Controls the speed of the animation.
-- Src: LottieFiles JSON data or URL to JSON. The JSON Data itself proves to be pretty difficult to import directly because of the LWC size constraints. It is best to import via URL. Either have the LottieFile JSON at a CDN (or LottieFiles.com) and add that URL as a CSP Trusted Site OR load the JSON into a static resource and add /resource/*/staticResourceName.
+- Src: LottieFiles JSON data or URL to JSON. The JSON Data itself proves to be pretty difficult to import directly because of the LWC size constraints. It is best to import via URL. Either have the LottieFile JSON at a CDN (or LottieFiles.com) and add that URL as a CSP Trusted Site OR load the JSON into a static resource and add /resource/*/staticResourceName* The example above is using https://assets2.lottiefiles.com/packages/lf20_wsywufs8.json, and https://assets2.lottiefiles.com was added to the CSP Trusted Sites.
 
