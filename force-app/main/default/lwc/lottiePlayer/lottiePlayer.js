@@ -516,15 +516,15 @@ export default class lottiePlayer extends LightningElement {
     }
 
     get isPlaying() {
-        this.currentState === PlayerState.Playing;
+        return this.currentState === PlayerState.Playing;
     }
 
     get isPaused() {
-        this.currentState === PlayerState.Paused;
+       return this.currentState === PlayerState.Paused;
     }
 
     get isStopped() {
-        this.currentState === PlayerState.Stopped;
+        return this.currentState === PlayerState.Stopped;
     }
 
     /**
